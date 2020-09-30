@@ -1,2 +1,2 @@
 # lerntest
-LernTest ‒ a testing app for shool
+LernTest ‒ a testing app for school
