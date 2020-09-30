@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cxp:make xmlns:cxp="http://www.tenbusch.info/cxproc" readonly="no">
+  <cxp:subst string="%DOCDIR%" env="CXP_ROOT" dir="pwd"/>
+  <cxp:subst string="%CGIID%" cgi="id" argv="2" default="unknown"/>
+  <cxp:subst string="%CGICONTENT%" cgi="content" encoding="base64"/>
+  <cxp:subst string="%Y" now="Year"/>
+  <cxp:subst string="%m" now="NumOfMonth"/>
+  <cxp:subst string="%d" now="DayOfMonth"/>
+  <cxp:subst string="%H" now="Hour"/>
+  <cxp:subst string="%M" now="Minute"/>
+  <cxp:subst string="%S" now="Second"/>
+  <cxp:system message="%CGIID% in %DOCDIR%"/>
+  <cxp:plain name="%DOCDIR%%CGIID%/%Y%m%d_%H%M%S.csv">%CGICONTENT%</cxp:plain>
+  <cxp:plain name="-">OK</cxp:plain>
+</cxp:make>

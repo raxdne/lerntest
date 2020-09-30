@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pie class="tree">
+  <section>
+    <h>LernTest</h>
+    <section background="background_math">
+      <h>Mathematik</h>
+      <section>
+        <h>Klasse 1</h>
+        <list>
+          <p>Addition</p>
+        </list>
+      </section>
+      <section>
+        <h>Klasse 2</h>
+        <list>
+          <p>EinMalEinsKlein</p>
+          <p>AdditionHunderter</p>
+          <p>Multiplikation</p>
+          <p>Division</p>
+          <p>DivisionRest</p>
+          <p>Runden</p>
+        </list>
+      </section>
+      <section>
+        <h>Klasse 3</h>
+        <list>
+          <p>EinMalEinsGross</p>
+        </list>
+      </section>
+      <section>
+        <h>Klasse 4</h>
+        <list>
+          <p>Klammern</p>
+        </list>
+      </section>
+      <section valid="no">
+        <h>Klasse 5</h>
+        <list>
+          <p>Längen-Einheiten</p>
+          <p>Währungs-Einheit EUR</p>
+          <p>Flächen-Einheiten</p>
+          <p>Volumen-Einheiten</p>
+        </list>
+      </section>
+      <section>
+        <h>Klasse 6</h>
+        <list>
+          <p>AdditionDezimal</p>
+          <p>MultiplikationDezimal</p>
+          <p>DivisionDezimal</p>
+          <p>KlammernMinus</p>
+        </list>
+      </section>
+    </section>
+    <section valid="yes" background="background_en">
+      <h>English</h>
+      <section>
+        <h>Class 5</h>
+        <section>
+          <h>Lesson 1</h>
+          <list>
+            <p>
+              <link href="/xml/GetDictionary.cxp?ods=common/Demo/Demo.ods&amp;lesson=1">Lesson 1</link>
+            </p>
+          </list>
+        </section>
+        <section>
+          <h>Lesson 2</h>
+        </section>
+        <section>
+          <h>Lesson 3</h>
+        </section>
+      </section>
+      <section>
+        <h>Class 6</h>
+      </section>
+      <section>
+        <h>Class 7</h>
+      </section>
+    </section>
+    <section background="background_fr" specialchars="yes">
+      <h>Français</h>
+      <section>
+        <h>Classe 6</h>
+        <list>
+          <p>
+            <link href="/xml/GetDictionary.cxp?lesson=0">Alle</link>
+          </p>
+          <p>
+            <link href="/xml/GetDictionary.cxp?lesson=1">Leçon 1</link>
+          </p>
+          <p>
+            <link href="/xml/GetDictionary.cxp?lesson=2">Leçon 2</link>
+          </p>
+          <p>
+            <link href="/xml/GetDictionary.cxp?lesson=3">Leçon 3</link>
+          </p>
+          <p>
+            <link href="/xml/GetDictionary.cxp?lesson=4">Leçon 4</link>
+          </p>
+          <p>
+            <link href="/xml/GetDictionary.cxp?lesson=5">Leçon 5</link>
+          </p>
+          <p>
+            <link href="/xml/GetDictionary.cxp?lesson=6">Leçon 6</link>
+          </p>
+          <p>
+            <link href="/xml/GetDictionary.cxp?lesson=7">Leçon 7</link>
+          </p>
+          <p>
+            <link href="/xml/GetDictionary.cxp?lesson=8">Leçon 8</link>
+          </p>
+          <p>
+            <link href="/xml/GetDictionary.cxp?lesson=9">Leçon 9</link>
+          </p>
+          <p>
+            <link href="/xml/GetDictionary.cxp?lesson=10">Unregelmässige Verben</link>
+          </p>
+        </list>
+      </section>
+      <section>
+        <h>Classe 7</h>
+        <list>
+          <p>
+            <link href="/xml/GetDictionary.cxp?ods=karl/dec-2.ods&amp;langa=de&amp;langb=fr&amp;lesson=0">Alle</link>
+          </p>
+          <p>
+            <link href="/xml/GetDictionary.cxp?ods=karl/dec-2.ods&amp;langa=de&amp;langb=fr&amp;lesson=1">Leçon 1</link>
+          </p>
+          <p>
+            <link href="/xml/GetDictionary.cxp?ods=karl/dec-2.ods&amp;langa=de&amp;langb=fr&amp;lesson=2">Leçon 2</link>
+          </p>
+          <p>
+            <link href="/xml/GetDictionary.cxp?ods=karl/dec-2.ods&amp;langa=de&amp;langb=fr&amp;lesson=3">Leçon 3</link>
+          </p>
+          <p>
+            <link href="/xml/GetDictionary.cxp?ods=karl/dec-2.ods&amp;langa=de&amp;langb=fr&amp;lesson=4">Leçon 4</link>
+          </p>
+          <p>
+            <link href="/xml/GetDictionary.cxp?ods=karl/dec-2.ods&amp;langa=de&amp;langb=fr&amp;lesson=5">Leçon 5</link>
+          </p>
+          <p>
+            <link href="/xml/GetDictionary.cxp?ods=karl/dec-2.ods&amp;langa=de&amp;langb=fr&amp;lesson=6">Leçon 6</link>
+          </p>
+          <p>
+            <link href="/xml/GetDictionary.cxp?ods=karl/dec-2.ods&amp;langa=de&amp;langb=fr&amp;lesson=7">Leçon 7</link>
+          </p>
+          <p>
+            <link href="/xml/GetDictionary.cxp?ods=karl/dec-2.ods&amp;langa=de&amp;langb=fr&amp;lesson=8">Leçon 8</link>
+          </p>
+          <p>
+            <link href="/xml/GetDictionary.cxp?ods=karl/dec-2.ods&amp;langa=de&amp;langb=fr&amp;lesson=9">Leçon 9</link>
+          </p>
+          <p>
+            <link href="/xml/GetDictionary.cxp?ods=karl/dec-2.ods&amp;langa=de&amp;langb=fr&amp;lesson=10">Unregelmässige Verben</link>
+          </p>
+          <p>
+            <link href="/xml/GetDictionary.cxp?ods=karl/dec-2.ods&amp;langa=de&amp;langb=fr&amp;lesson=11">Verben</link>
+          </p>
+        </list>
+      </section>
+      <section>
+        <h>On y va!</h>
+        <list>
+          <p>
+            <link href="/xml/GetDictionary.cxp?lesson=1&amp;ods=soeren/On-y-va.ods&amp;lang=fr">Leçon 1</link>
+          </p>
+          <p>
+            <link href="/xml/GetDictionary.cxp?lesson=2&amp;ods=soeren/On-y-va.ods&amp;lang=fr">Leçon 2</link>
+          </p>
+          <p>
+            <link href="/xml/GetDictionary.cxp?lesson=3&amp;ods=soeren/On-y-va.ods&amp;lang=fr">Leçon 3</link>
+          </p>
+          <p>
+            <link href="/xml/GetDictionary.cxp?lesson=4&amp;ods=soeren/On-y-va.ods&amp;lang=fr">Leçon 4</link>
+          </p>
+          <p>
+            <link href="/xml/GetDictionary.cxp?lesson=5&amp;ods=soeren/On-y-va.ods&amp;lang=fr">Leçon 5</link>
+          </p>
+        </list>
+      </section>
+    </section>
+    <section specialchars="yes">
+      <h>Español</h>
+      <section>
+        <h>level A</h>
+        <list>
+          <p>
+            <link href="/xml/GetDictionary.cxp?lesson=1&amp;ods=Wortliste-Español-S.ods&amp;lang=es">Lección 1</link>
+          </p>
+        </list>
+      </section>
+    </section>
+    <section>
+      <h>Geschichte</h>
+      <section>
+        <h>Klasse 8</h>
+        <list>
+          <p background="background_fr">
+            <link href="/xml/GetDictionary.cxp?lesson=1&amp;ods=Geschichte.ods">Frankreich</link>
+          </p>
+        </list>
+      </section>
+    </section>
+    <section>
+      <h>Test</h>
+      <list>
+        <p>
+          <link href="/xml/GetDictionary.cxp?lesson=1&amp;ods=unknown/Demo.ods">Demo</link>
+        </p>
+        <p>
+          <link href="/xml/GetDictionary.cxp?lesson=1&amp;ods=unknown/Test.ods">Test</link>
+        </p>
+        <p>
+          <link href="/xml/GetDictionary.cxp?lesson=1&amp;ods=common/English.ods">My English</link>
+        </p>
+      </list>
+    </section>
+  </section>
+</pie>

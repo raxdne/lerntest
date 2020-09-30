@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cxp:make xmlns:cxp="http://www.tenbusch.info/cxproc">
+  <cxp:subst string="%DOCDIR%" env="CXP_ROOT" dir="pwd"/>
+  <cxp:subst string="%CGIID%" cgi="id" argv="2" default="unknown"/>
+  <cxp:system message="%CGIID% in %DOCDIR%"/>
+  <!--  -->
+  <cxp:xhtml name="-">
+    <cxp:xml>
+      <cxp:flashcard>
+        <cxp:xml>
+          <cxp:calendar>
+            <cxp:col id="all">
+              <cxp:xml>
+                <cxp:dir name="%DOCDIR%/%CGIID%" sep=";" imatch=".*.csv" depth="1" verbosity="3" index="skip"/>
+              </cxp:xml>
+            </cxp:col>
+          </cxp:calendar>
+          <!-- <cxp:xsl xpath="/calendar/year[1]"/> -->
+        </cxp:xml>
+      </cxp:flashcard>
+    </cxp:xml>
+    <cxp:xsl name="LernTestShowStatisticsHtml.xsl"/>
+  </cxp:xhtml>
+</cxp:make>

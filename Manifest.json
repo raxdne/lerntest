@@ -1,0 +1,34 @@
+{
+  "info" : 
+  {
+    "name" : "lerntest",
+
+    "summary" : "Custom Application",
+    "description" : "This is a skeleton for a custom application with qooxdoo.",
+    
+    "homepage" : "https://github.com/raxdne/lerntest/",
+
+    "license" : "GPL v3",
+    "authors" : 
+    [
+      {
+        "name" : "A. Tenbusch",
+        "email" : "raxdne@web.de"
+      }
+    ],
+
+    "version" : "master",
+    "qooxdoo-versions": ["5.0.2"]
+  },
+  
+  "provides" : 
+  {
+    "namespace"   : "lerntest",
+    "encoding"    : "utf-8",
+    "class"       : "source/class",
+    "resource"    : "source/resource",
+    "translation" : "source/translation",
+    "type"        : "application"
+  }
+}
+

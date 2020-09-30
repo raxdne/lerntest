@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cxp:make xmlns:cxp="http://www.tenbusch.info/cxproc" log="3">
+  <cxp:description>LernTest Filter</cxp:description>
+  <cxp:subst string="%TIMESTAMP%" now="%s"/>
+  <cxp:subst string="%CGIID%" cgi="id" default="unknown"/>
+  <cxp:subst string="%CGIDB%" cgi="db" default="%CGIID%/result.db3"/>
+  <cxp:subst string="%CGIDELTA%" cgi="delta" default="60 * 60 * 24 * 3"/>
+  <!--  -->
+  <cxp:plain name="-">
+    <cxp:xml>
+      <cxp:db name="%CGIDB%" write="no"/>
+      <cxp:query>SELECT DISTINCT value FROM result WHERE (value != '') AND (%TIMESTAMP% - timestamp) &lt; %CGIDELTA%;</cxp:query>
+    </cxp:xml>
+    <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+      <xsl:output method="text" encoding="UTF-8"/>
+      <xsl:template match="/">
+        <xsl:text>[</xsl:text>
+        <xsl:for-each select="//value">
+          <xsl:if test="position() &gt; 1">
+            <xsl:text>,</xsl:text>
+          </xsl:if>
+          <xsl:value-of select="concat('&quot;',.,'&quot;')"/>
+        </xsl:for-each>
+        <xsl:text>]</xsl:text>
+      </xsl:template>
+    </xsl:stylesheet>
+  </cxp:plain>
+</cxp:make>

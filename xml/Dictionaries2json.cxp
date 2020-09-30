@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cxp:make xmlns:cxp="http://www.tenbusch.info/cxproc" log="2">
+  <cxp:description>Wortliste </cxp:description>
+  <cxp:plain name="source/resource/lerntest/Deutsch-English.json">
+    <cxp:xml name="Deutsch-English.xml"/>
+    <cxp:xsl name="dict2json.xsl">
+      <cxp:variable name="str_lang_b" select="'en'"/>
+    </cxp:xsl>
+  </cxp:plain>
+  <cxp:plain name="source/resource/lerntest/Deutsch-Francais.json">
+    <cxp:xml name="Wortliste-Französisch.ods"/>
+    <cxp:xsl name="ods2dict.xsl"/>
+    <cxp:xsl name="dict2json.xsl">
+      <cxp:variable name="str_lang_b" select="'fr'"/>
+    </cxp:xsl>
+  </cxp:plain>
+</cxp:make>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cxp:make xmlns:cxp="http://www.tenbusch.info/cxproc" readonly="no">
+  <cxp:subst string="%CGIID%" cgi="id" argv="2" default="unknown"/>
+  <cxp:plain name="-">
+    <cxp:xml name="%CGIID%/Tree.pie"/>
+    <cxp:xsl name="pie2qxmenu.xsl"/>
+  </cxp:plain>
+</cxp:make>

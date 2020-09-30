@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cxp:make xmlns:cxp="http://www.tenbusch.info/cxproc">
+  <cxp:description>Wortliste </cxp:description>
+  <cxp:subst string="%BASEDIR%" dir="ofFile"/>
+  <cxp:subst string="%LESSON%" cgi="lesson" default="0"/>
+  <cxp:plain name="-">
+    <cxp:xml name="%BASEDIR%/unknown/Deutsch-English.xml"/>
+    <cxp:xsl name="%BASEDIR%/dict2json.xsl">
+       <cxp:variable name="str_lang_b" select="'en'"/>
+       <cxp:variable name="int_lesson" select="%LESSON%"/>
+    </cxp:xsl>
+  </cxp:plain>
+</cxp:make>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cxp:make xmlns:cxp="http://www.tenbusch.info/cxproc">
+  <cxp:description>Wortliste </cxp:description>
+  <cxp:subst string="%ODSFILE%" cgi="ods" default="unknown/Demo.ods"/>
+  <cxp:subst string="%LANGA%" cgi="langa" default="de"/>
+  <cxp:subst string="%LANGB%" cgi="langb" default="en"/>
+  <cxp:subst string="%LESSON%" cgi="lesson" default="0"/>
+  <cxp:subst string="%COLS%" cgi="cols" default="1,2"/>
+  <cxp:plain name="-">
+    <cxp:xml>
+      <cxp:file name="%ODSFILE%" verbosity="4"/>
+    </cxp:xml>
+    <cxp:xsl name="ods2dict.xsl">
+      <cxp:variable name="str_lang_a" select="'%LANGA%'"/>
+      <cxp:variable name="str_lang_b" select="'%LANGB%'"/>
+      <cxp:variable name="cols" select="'%COLS%'"/>
+    </cxp:xsl>
+    <cxp:xsl name="dict2json.xsl">
+      <cxp:variable name="str_lang_a" select="'%LANGA%'"/>
+      <cxp:variable name="str_lang_b" select="'%LANGB%'"/>
+      <cxp:variable name="int_lesson" select="%LESSON%"/>
+    </cxp:xsl>
+  </cxp:plain>
+</cxp:make>

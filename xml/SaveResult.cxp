@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cxp:make xmlns:cxp="http://www.tenbusch.info/cxproc" log="4" readonly="no">
+  <cxp:description>LernTest save</cxp:description>
+  <cxp:subst string="%CGIID%" cgi="id" default="unknown"/>
+  <cxp:subst string="%CGIDB%" cgi="db" default="%CGIID%/result.db3"/>
+<!--
+  <cxp:xml name="unknown/test.xml" response="OK">
+    <cxp:include cgi="content" encoding="base64"/>
+  </cxp:xml>
+  -->
+  <cxp:db name="%CGIDB%" append="yes" write="yes">
+    <cxp:include cgi="content" encoding="base64"/>
+  </cxp:db>
+  <cxp:plain name="-">OK</cxp:plain>
+</cxp:make>
