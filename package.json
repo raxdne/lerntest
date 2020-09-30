@@ -1,6 +1,6 @@
 {
   "name": "lerntest",
-  "version": "0.1.0",
+  "version": "0.9.0",
   "repository" : {},
   "devDependencies": {
     "grunt": "~0.4.2",

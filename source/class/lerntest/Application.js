@@ -217,7 +217,7 @@ lerntest.Application.prototype.createWindowTree = function() {
     } else {
 	var radioButtonGroupVBox = new qx.ui.form.RadioButtonGroup();
 	radioButtonGroupVBox.setLayout(new qx.ui.layout.VBox(1));
-	radioButtonGroupVBox.add(new qx.ui.form.RadioButton("Langzeit"));
+	//radioButtonGroupVBox.add(new qx.ui.form.RadioButton("Langzeit"));
 	radioButtonGroupVBox.add(new qx.ui.form.RadioButton("Klassenarbeit"));
 	radioButtonGroupVBox.add(new qx.ui.form.RadioButton("Quiz"));
 	//radioButtonGroupVBox.add(new qx.ui.form.RadioButton("Nachschlagen"));
